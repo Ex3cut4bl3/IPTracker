@@ -6,10 +6,15 @@ There is a validation script that runs at the start of the program to ensure tha
 
 Simply run the script as Administrator or open a Powershell Command Line in Administrator and run the script through the terminal.
 
-Terminal Command:
-
+Change Directory to Repository:
 ```
 cd [Location of the downloaded file]\IPTracker
+```
+Set Execution Policy to Unrestricted
+```
+Set-ExecutionPolicy Unrestricted
+```
+Run The Script
 ```
 .\Tracker.ps1
 ```
