@@ -13,7 +13,6 @@ cd [Location of the downloaded file]\IPTracker
 ```
 .\Tracker.ps1
 ```
-
 ## Overview
 
 - Information Provided:
