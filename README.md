@@ -31,3 +31,5 @@ Run The Script
   - clear
   - exit
   - view-transcript
+
+Note: I am currently in development of making this program function correctly in Linux.
