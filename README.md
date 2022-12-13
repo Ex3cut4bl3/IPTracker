@@ -34,6 +34,6 @@ Run The Script
   - exit
   - view-transcript
 
-## 
+## Issues
 
 **Note: Any problems with the code please raise an issue. Furthermore I am currently working on developing the program to be more compatible with Linux fixing components like voiding the run as Administrator when on a Linux system and the View-Transcript protocol to run in a native text editor.**
