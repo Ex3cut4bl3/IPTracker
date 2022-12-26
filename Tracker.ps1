@@ -2,24 +2,10 @@
     .NOTES
         Author:         Ex3cut4bl3
         GitHub:         https://github.com/Ex3cut4bl3
-        Version:        ID_001
+        Version:        ID_002
     #>
 
-    # Validating that the program is running as Administrator.
-    if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]'Administrator')) {
-        Write-Host "[" -ForegroundColor White -NoNewline; Write-Host "-" -ForegroundColor Red -NoNewline; Write-Host "] " -ForegroundColor White -NoNewline; Write-Host "Please Run This As Administrator."
-        Write-Host ""
-        exit 0
-    }
-
-    # Tests to see if the log file exists, if so deletes the previous log file and creates a new one.
-    if (!(Test-Path -Path "C:\Logs")) {
-        Start-Transcript -Path "C:\Logs\ex3log.log"
-    } else {
-        Remove-Item -Path "C:\Logs\ex3log.log"
-        Start-Transcript -Path "C:\Logs\ex3log.log"
-        Clear-Host
-    }
+    Write-Host "$env:os"
 
     while ($true) {
         try {
@@ -30,8 +16,6 @@
                 } elseif ($iptolocate -eq "exit") {
                     exit 0
                 } elseif ($iptolocate -eq "") {
-                } elseif ($iptolocate -eq "view-transcript") {
-                    Start-Process notepad.exe "C:\Logs\ex3log.log"
                 } elseif ($iptolocate -eq "help") {
                     # Help Menu
                     Write-Host ""
@@ -40,7 +24,6 @@
                     Write-Host "           help: List of Commands Available"
                     Write-Host "           clear: Clears the screen"
                     Write-Host "           exit: Exits the Program. Reason Code 0"
-                    Write-Host "           view-transcript: View transcript (log) file with notepad."
                     Write-Host ""
                 } else {
                     # IP Address Information
