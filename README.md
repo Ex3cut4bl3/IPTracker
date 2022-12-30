@@ -33,10 +33,6 @@ Run The Script
   - clear
   - exit
   - view-transcript
-  
-## Compatibility
-
-**This script was built with Powershell V7, therefore any earlier versions of powershell running this code will most likely not work.**
 
 ## Powershell 7 Installation
 
@@ -51,4 +47,4 @@ https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powers
 
 ## Issues
 
-**Any problems with the code please raise an issue. Furthermore I am currently working on developing the program to be more compatible with Linux fixing components like voiding the run as Administrator when on a Linux system and the View-Transcript protocol to run in a native text editor.**
+**Any problems with the code please raise an issue. Furthermore I am currently working on developing the program to be more compatible with Linux fixing components like voiding the run as Administrator when on a Linux system and the View-Transcript protocol to run in a native text editor. Furthermore this code was created with Windows Powershell 7 (Core) in mind, therefore any earlier versions of Powershell are subject to issues and might not work properly.**
