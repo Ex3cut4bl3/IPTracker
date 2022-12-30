@@ -2,10 +2,6 @@
 
 [![made-with-powershell](https://img.shields.io/badge/PowerShell-1f425f?logo=Powershell)](https://microsoft.com/PowerShell)
 
-This tool provides the user information about any given IP Address that is pingable on the World Wide Web.
-There is a validation script that runs at the start of the program to ensure that you are running the program in Administrator.
-
-
 Change Directory to Repository:
 ```
 cd [Location of the downloaded file]\IPTracker
