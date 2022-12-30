@@ -33,7 +33,22 @@ Run The Script
   - clear
   - exit
   - view-transcript
+  
+## Compatibility
+
+**This script was built with Powershell V7, therefore any earlier versions of powershell running this code will most likely not work.**
+
+## Powershell 7 Installation
+
+**Winget (Windows Package Manager)**
+```
+winget install --id Microsoft.Powershell --source winget
+```
+**Through Executable or MSI package from the Microsoft Website**
+```
+https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?WT.mc_id=THOMASMAURER-blog-thmaure&view=powershell-7.3&viewFallbackFrom=powershell-7
+```
 
 ## Issues
 
-**Note: Any problems with the code please raise an issue. Furthermore I am currently working on developing the program to be more compatible with Linux fixing components like voiding the run as Administrator when on a Linux system and the View-Transcript protocol to run in a native text editor.**
+**Any problems with the code please raise an issue. Furthermore I am currently working on developing the program to be more compatible with Linux fixing components like voiding the run as Administrator when on a Linux system and the View-Transcript protocol to run in a native text editor.**
