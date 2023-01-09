@@ -4,7 +4,7 @@
         GitHub:         https://github.com/Ex3cut4bl3
         Version:        ID_002
     #>
-
+    Clear-Host
     Write-Host "$env:os"
 
     while ($true) {
