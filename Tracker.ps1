@@ -2,14 +2,14 @@
     .NOTES
         Author:         Ex3cut4bl3
         GitHub:         https://github.com/Ex3cut4bl3
-        Version:        ID_002
+        Version:        ID_004
     #>
+
     Clear-Host
-    Write-Host "$env:os"
 
     while ($true) {
         try {
-            Write-Host "> " -NoNewline
+            Write-Host "[" -ForegroundColor White -NoNewline; Write-Host "OS" -ForegroundColor Blue -NoNewline; Write-Host "] " -NoNewline; Write-Host ($([System.Environment]::OSVersion.Platform)) -NoNewline; Write-Host " > " -NoNewline
             $iptolocate = $Host.UI.ReadLine()
                 if ($iptolocate -eq "clear") {
                     Clear-Host
